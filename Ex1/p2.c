@@ -1,11 +1,16 @@
 #include <stdio.h>
 #include <unistd.h>
-#include <stdlib.h>
+
 int main()
 {
 	int pid;
+	printf("P1:\nProcess ID: %d\nParent ID: %d\n", getpid(), getppid());
 	pid = fork();
 	if (pid == 0)
+	{
+		printf("P2:\nProcess ID: %d\nParent ID: %d\n", getpid(), getppid());
+	}
+	else
 	{
 		int pid1;
 		pid1 = fork();
@@ -13,13 +18,5 @@ int main()
 		{
 			printf("P3:\nProcess ID: %d\nParent ID: %d\n", getpid(), getppid());
 		}
-		else
-		{
-			printf("P2:\nProcess ID: %d\nParent ID: %d\n", getpid(), getppid());
-		}
-	}
-	else
-	{
-		printf("P1:\nProcess ID: %d\nParent ID: %d\n", getpid(), getppid());
 	}
 }
