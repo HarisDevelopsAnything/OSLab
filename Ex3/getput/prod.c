@@ -27,6 +27,6 @@ int main()
         data[n]++;
         count++;
     }
-    shmdt(data);
+    shmdt(data);+
     shmctl(sid, IPC_RMID, 0);
 }
