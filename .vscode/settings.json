@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "array": "c",
+        "strstream": "c",
+        "bitset": "c",
+        "functional": "c",
+        "random": "c",
+        "format": "c",
+        "future": "c",
+        "istream": "c",
+        "new": "c",
+        "ranges": "c",
+        "span": "c",
+        "sstream": "c",
+        "streambuf": "c",
+        "text_encoding": "c",
+        "type_traits": "c",
+        "valarray": "c",
+        "variant": "c",
+        "*.inc": "c"
+    }
+}
